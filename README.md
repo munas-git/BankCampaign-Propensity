@@ -1,3 +1,17 @@
+# Context
+Term deposits are a key income source for banks, and telephonic marketing remains one of the most effective ways to sell them. However, these campaigns are resource-intensive, involving large call centers. To optimize efficiency, it's crucial to identify customers who are most likely to convert before reaching out. [This dataset](https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets/data) is related to direct telephonic marketing campaigns of a Portuguese bank, with the goal of predicting whether a customer will subscribe to a term deposit (yes/no). ***My own personal objectives are listed below.***
+
+## Objectives
+- Evaluate effectiveness of past campaign... Past Conversion Rate.
+- Understand the nature of factors that actually drive conversion
+- Build a propensity model to estimate likelihood of future conversion for similar campaign.
+- Calibrate model to better reflect probabilities
+- Identify top percentage of leads expected to convert, without triggering diminishing returns.
+- Measure gains and uplift
+- Design and recommend data-informed A/B experiments strategies. 
+
+---
+
 This analysis focused on optimising telephonic marketing campaigns for term deposit products by leveraging a robust propensity modeling approach. The goal was to identify high-likelihood conversion targets, thereby increasing campaign efficiency and ROI for the bank which led to the discovery of the fact that `83.54%` of all conversions are captured by just the top ***40.0%*** of leads, and they are `6.01` times more likely to convert than if leads are picked at random.
 
 **Key Findings**
