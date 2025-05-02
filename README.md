@@ -1,18 +1,18 @@
 # Context
-Term deposits are a key income source for banks, and telephonic marketing remains one of the most effective ways to sell them. However, these campaigns are resource-intensive, involving large call centers. To optimize efficiency, it's crucial to identify customers who are most likely to convert before reaching out. [This dataset](https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets/data) is related to direct telephonic marketing campaigns of a Portuguese bank, with the goal of predicting whether a customer will subscribe to a term deposit (yes/no). ***My own personal objectives are listed below.***
+Term deposits are a key income source for banks, and telephonic marketing remains one of the most effective ways to sell them. However, these campaigns are resource-intensive, involving large call centres. To optimise efficiency, it's crucial to identify customers who are most likely to convert before reaching out. [This dataset](https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets/data) is related to direct telephonic marketing campaigns of a Portuguese bank, with the goal of predicting whether a customer will subscribe to a term deposit (yes/no). ***My own personal objectives are listed below.***
 
 ## Objectives
-- Evaluate effectiveness of past campaign... Past Conversion Rate.
+- Evaluate the effectiveness of the past campaign... Past Conversion Rate.
 - Understand the nature of factors that actually drive conversion
-- Build a propensity model to estimate likelihood of future conversion for similar campaign.
-- Calibrate model to better reflect probabilities
-- Identify top percentage of leads expected to convert, without triggering diminishing returns.
+- Build a propensity model to estimate the likelihood of future conversion for similar campaigns.
+- Calibrate the model to better reflect probabilities
+- Identify the top percentage of leads expected to convert, without triggering diminishing returns.
 - Measure gains and uplift
 - Design and recommend data-informed A/B experiments strategies. 
 
 ---
 
-This analysis focused on optimising telephonic marketing campaigns for term deposit products by leveraging a robust propensity modeling approach. The goal was to identify high-likelihood conversion targets, thereby increasing campaign efficiency and ROI for the bank which led to the discovery of the fact that `83.54%` of all conversions are captured by just the top ***40.0%*** of leads, and they are `6.01` times more likely to convert than if leads are picked at random.
+This analysis focused on optimising telephonic marketing campaigns for term deposit products by leveraging a robust propensity modelling approach. The goal was to identify high-likelihood conversion targets, thereby increasing campaign efficiency and ROI for the bank which led to the discovery of the fact that `83.54%` of all conversions are captured by just the top ***40.0%*** of leads, and they are `6.01` times more likely to convert than if leads are picked at random.
 
 **Key Findings**
 
@@ -32,8 +32,8 @@ This analysis focused on optimising telephonic marketing campaigns for term depo
 - Outliers in call duration, campaign contacts, and previous contacts were carefully excluded to prevent skewed modeling.
 - Categorical variables were encoded with attention to ordinal relationships (e.g., education, month).
 - Data balancing techniques (SMOTE, undersampling) were considered to address class imbalance.
-- Initial model was trained with a `train/test/calib` set to understand performance as well as impact of calibration on score alignment.
-- Final model was trained on the previously mentioned `train + test` set, then calibrated using original calibrated set and sigmoid method to better reflected true conversion likelihoods.
+- Initial model was trained with a `train/test/calib` set to understand performance as well as the impact of calibration on score alignment.
+- Final model was trained on the previously mentioned `train + test` set, then calibrated using the original `calib` set and sigmoid method to better reflect true conversion likelihoods.
 
 
 ## Recommendations
@@ -57,7 +57,7 @@ This analysis focused on optimising telephonic marketing campaigns for term depo
 **4. Enhance Data Quality \& Monitoring**
 
 - Regularly review and update customer data to maintain segmentation accuracy.
-- Try to find out the education levels an outreach method of those currently unknown
+- Try to find out the education levels and outreach methods of those currently unknown
 - Monitor for outliers and update exclusion thresholds as needed to keep the model robust.
 
 
@@ -81,7 +81,7 @@ To validate and further optimise these strategies, implement the following A/B t
 ## Final Observations
 
 - The propensity model provides actionable insights for resource allocation and campaign design, enabling the bank to focus efforts on clients most likely to convert.
-- Regular calibration and monitoring are essential to adapt to changing customer behaviors and market conditions.
+- Regular calibration and monitoring are essential to adapt to changing customer behaviours and market conditions.
 - Combining data-driven targeting with thoughtful A/B testing will maximise marketing ROI and customer satisfaction.
 
 **NOTE**: This entire analysis is part of my weekly series in efforts to **demystify applied statistical techniques through real-world, project-driven examples**, making concepts like propensity modelling, causal inference, and evaluation metrics more accessible to practitioners of all backgrounds.   
