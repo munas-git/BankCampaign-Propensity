@@ -8,11 +8,13 @@ Term deposits are a key income source for banks, and telephonic marketing remain
 - Calibrate the model to better reflect probabilities
 - Identify the top percentage of leads expected to convert, without triggering diminishing returns.
 - Measure gains and uplift
-- Design and recommend data-informed A/B experiments strategies. 
+- Design and recommend data-informed A/B experiments strategies.
+
+> Let's connect! --> [LinkedIn](https://www.linkedin.com/in/einstein-ebereonwu/) | [X](https://x.com/einsteinmuna) | [GitHub.](https://github.com/munas-git)
 
 ---
 
-# Final Notes: Term Deposit Propensity Modelling
+# Process & Findings: Term Deposit Propensity Modelling
 
 This analysis focused on optimising telephonic marketing campaigns for term deposit products by leveraging a robust propensity modelling approach. The goal was to identify high-likelihood conversion targets, thereby increasing campaign efficiency and ROI for the bank which led to the discovery of the fact that `83.54%` of all conversions are captured by just the top ***40.0%*** of leads, and they are `6.01` times more likely to convert than if leads are picked at random.
 
