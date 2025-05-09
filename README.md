@@ -50,7 +50,7 @@ This analysis focused on optimising telephonic marketing campaigns for term depo
 **2. Optimise Campaign Strategy**
 
 - Limit contact attempts to a maximum of 3 per client to avoid diminishing returns and potential customer fatigue.
-- Schedule campaigns to peak in May or other high-performing months identified in the analysis.
+- Schedule campaigns to peak in May, July, or August as they result in the highest percentage of conversions of top leads.
 - Favour cellular over telephone outreach for higher engagement.
 
 **3. Personalise Messaging**
